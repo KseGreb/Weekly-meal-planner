@@ -1,4 +1,9 @@
 const MyMealsAndIngredients = () => {
+
+    const addingDay = () =>{
+        
+    }
+
     return(
         <div  className="whole-plan">
             <div className="meal-editing">
@@ -6,6 +11,7 @@ const MyMealsAndIngredients = () => {
                     type="text"
                     className="myInput"
                     placeholder="Today is..."
+                    onChange={addingDay}
                 />
                 <textarea
                     placeholder="Write your meal plan here"

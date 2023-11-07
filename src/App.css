@@ -48,3 +48,9 @@ textarea{
   border-radius: 20px;
   font-family: 'Montserrat', sans-serif;
 }
+.selected{
+  background-color: #fad106;
+}
+.default{
+  background-color: #dcedf7;
+}
