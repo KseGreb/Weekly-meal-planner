@@ -24,6 +24,15 @@ function App() {
   setMealsPlans(mealPlans.filter(({id})=> id !== mealId))
 }
 
+const updateDay = (myUptatedMeal) => {
+  const updatedMeals = mealPlans.map((mealPlan) => {
+    if (mealPlan.id === myUptatedMeal.id) {
+      return myUptatedMeal;
+    }
+    return mealPlan;
+  })
+}
+
   return (
     <div className="App">
       <MyList 
@@ -33,7 +42,9 @@ function App() {
         selectedDay={selectedDay}
         setSelectedDay={setSelectedDay}
         />
-      <MyMealsAndIngredients/>
+      <MyMealsAndIngredients 
+        selectedDay={selectedDay}
+        updateDay={updateDay}/>
     </div>
   );
 }

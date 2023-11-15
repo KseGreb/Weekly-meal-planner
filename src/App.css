@@ -21,7 +21,7 @@ h1{
   font-family: 'Montserrat', sans-serif;
   border: 0; 
   background: none;
-  font-size: 17px;
+  font-size: 10px;
 }
 .App{
   display: flex;
@@ -53,4 +53,9 @@ textarea{
 }
 .default{
   background-color: #dcedf7;
+}
+.planYourWeek{
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
 }
