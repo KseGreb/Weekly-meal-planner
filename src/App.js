@@ -31,6 +31,11 @@ const updateDay = (myUptatedMeal) => {
     }
     return mealPlan;
   })
+  setMealsPlans(updatedMeals)
+}
+
+const getActiveMeal = () => {
+  return mealPlans.find(({id}) => id === selectedDay)
 }
 
   return (
@@ -43,7 +48,7 @@ const updateDay = (myUptatedMeal) => {
         setSelectedDay={setSelectedDay}
         />
       <MyMealsAndIngredients 
-        selectedDay={selectedDay}
+        selectedDay={getActiveMeal()}
         updateDay={updateDay}/>
     </div>
   );

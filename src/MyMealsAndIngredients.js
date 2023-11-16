@@ -1,9 +1,9 @@
 const MyMealsAndIngredients = ({selectedDay, updateDay}) => {
 
-    const editMyMeal = (myInput, value) =>{
+    const editMyMeal = (myInput, value) => {
         updateDay({
             ...selectedDay,
-            [myInput]:value
+            [myInput]: value
         })
     }
 
@@ -18,7 +18,8 @@ const MyMealsAndIngredients = ({selectedDay, updateDay}) => {
                     placeholder="Today is..."
                     id="title"
                     value={selectedDay.title}
-                    onChange={(e) => editMyMeal("title", e.target.value)}
+                    onChange = {(e) => editMyMeal("title", e.target.value)}
+                
                 />
                 <textarea
                     placeholder="Write your meal plan here"

@@ -13,7 +13,7 @@ const MyList = ({mealPlans, addMeal, deleteItem, selectedDay, setSelectedDay}) =
                         onClick={() => setSelectedDay(id)}
                         key={id}
                     >
-                        <p>{title}</p>
+                        <p className="title">{title}</p>
                         <p>{mealForADay}</p>
                         <button className="button-delete" onClick={()=>deleteItem(id)}>DELETE</button>
                     </div>

@@ -59,3 +59,10 @@ textarea{
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
 }
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+/* input:focus::placeholder {
+  color: transparent;
+} */
