@@ -1,3 +1,4 @@
+![smartmockups_lp7i01jg](https://github.com/KseGreb/Weekly-meal-planner/assets/110953599/84f9ec01-86c6-4831-8bb6-09941530a6fb)
 
 
 Please check it out here: https://whats-cooking-good-looking.netlify.app/
