@@ -7,11 +7,11 @@ const MyMealsAndIngredients = ({selectedDay, updateDay}) => {
         })
     }
 
+
     if(!selectedDay)return <p className="planYourWeek">Plan your week agead</p>
 
     return(
         <div  className="whole-plan">
-            <div className="meal-editing">
                 <input
                     type="text"
                     className="myInput"
@@ -19,17 +19,22 @@ const MyMealsAndIngredients = ({selectedDay, updateDay}) => {
                     id="title"
                     value={selectedDay.title}
                     onChange = {(e) => editMyMeal("title", e.target.value)}
-                
                 />
                 <textarea
                     placeholder="Write your meal plan here"
+                    className="myTextarea"
+                    id="mealForADay"
+                    value={selectedDay.mealForADay}
+                    onChange = {(e) => editMyMeal("mealForADay", e.target.value)}
                 />
                 <textarea
                     placeholder="List of ingredients"
+                    className="myTextarea"
+                    id="mealForADay"
+                    value={selectedDay.ingredients}
+                    onChange = {(e) => editMyMeal("ingredients", e.target.value)}
                 />
             </div>
-           
-        </div>
     )
 }
 export default MyMealsAndIngredients;
